@@ -1,0 +1,52 @@
+/* Estilo para el header con fondo azul y texto blanco */
+header {
+  background-color: #3a78b0; /* azul */
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* Encabezado principal */
+h1 {
+  color: steelblue;
+}
+
+/* Imagen con sombra y borde */
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* Estilo para el párrafo principal */
+p {
+ padding: 0;
+}
+
+/* Cuadro para aside */
+aside {
+ width: 20em;
+ margin:1em ;
+ border:1px solid rgb(0, 0,0,0.2) ;
+ padding: 1em;
+ background-color: #eee;
+ color:#333 ;
+ text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid #000;
+  text-align: center;
+}
