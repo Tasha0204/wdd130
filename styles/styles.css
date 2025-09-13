@@ -22,6 +22,7 @@ h1 {
 
 main {
   margin: 10px;
+  max-width: 100%;
 }
 main img {
   width: 150px;
