@@ -47,7 +47,18 @@ nav, p, section, article {
   width: 100%;
   height: auto;
 }
-
+.hero h1{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 2;
+  background-color: var(--accent1-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
 .hero-content {
   position: absolute;
   top: 20px;
@@ -61,34 +72,19 @@ nav, p, section, article {
   background-color: var(--accent1-color);
   z-index: 2;
 }
-
-
-.hero-article-overlay {
+.hero article {
   position: absolute;
-  top: 150px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
-
-
-
-
-
-.hero-article-overlay p {
-  flex: 1;
-  margin: 0;
-}
-
-.hero-article-overlay img {
+.hero article img {
   float: right;
   width: 125px;
   height: auto;
