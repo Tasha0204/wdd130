@@ -24,8 +24,18 @@ header, main, footer {
   width: 960px;
   margin: 0 auto;
 }
+h1{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
 
-h1, h2 {
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
@@ -41,7 +51,7 @@ h1, h2 {
 
 .hero {
   position: relative;
-  width: 100%;
+
 }
 
 .hero img {
@@ -49,61 +59,55 @@ h1, h2 {
   width: 100%;
   height: auto;
 }
-
-.hero-content {
+.hero-title {
   position: absolute;
-  top: 5%; 
+  top: 20px;
   left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 2;
-  text-align: center;
-  color: white;
+  transform: translateX(-50%);
   width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+
   padding: 16px;
   opacity: 0.7;
-  background-color: var(--accent1-color);
-}
-
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: white; 
-  background-color: #ff9a0dc7; 
-  padding: 5px 15px;
-  display: inline-block;
+  background-color: var(--primary-color);
+  z-index: 2;
 }
 
 .hero-article-overlay {
-    position: absolute;
-    bottom: 20px; 
-    left: 30%;
-    transform: translate(-50%, 0);
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-align: left;
+  position: absolute;
+  top: 350px; 
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: rgba(255, 176, 39, 0.9);
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
 }
+
+
+
+
 
 .hero-article-overlay p {
   flex: 1;
-  margin: 0;
+
 }
 
 .hero-article-overlay img {
-  width: 150px;
-  height: auto;
-  border-radius: 5px;
   float: right;
-  margin-left: 20px
+  width: 200px;
+  height: auto;
+  border-radius: 3px;
+  margin-left: 20px;
 }
 
-/* Social Media Section */
+
 .socialmedia {
   display: flex;
   justify-content: center;
@@ -117,7 +121,7 @@ h1, h2 {
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: var(--secondary-color);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   text-decoration: none;
 }
