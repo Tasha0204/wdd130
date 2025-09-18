@@ -6,137 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - White Water Rafting</title>
     <meta name="description"
-        content="Tasha Rosa Vidal Bravo, BYU-Idaho WDD 130 creación de sitio web para una empresa de rafting">
+        content="Tasha Rosa Vidal Bravo, BYU-Idaho WDD 130 Website creation for a rafting company.">
     <meta name="author" content="Tasha Rosa Vidal Bravo">
-
-    <style>
-        :root {
-            --primary-color: #5d5a85;
-            --secondary-color: #f4a261;
-            --accent1-color: #e9c46a;
-            --accent2-color: #e76f51;
-
-            --heading-font: 'Times New Roman', 'Georgia', serif;
-            --body-font: 'Arial', 'Helvetica', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--body-font);
-            color: #000000;
-        }
-
-        header,
-        main,
-        footer {
-            width: 960px;
-            margin: 0 auto;
-        }
-
-        h1,
-        h2 {
-            font-family: var(--heading-font);
-            color: var(--primary-color);
-        }
-
-        nav,
-        p,
-        section,
-        article {
-            margin: 16px;
-            padding: 8px;
-            color: #000000;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-        }
-
-        .hero img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .hero-content {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            text-align: center;
-            color: white;
-            padding: 16px;
-            opacity: 0.7;
-            background-color: var(--accent1-color);
-            z-index: 2;
-        }
-
-        .hero-article-overlay {
-            position: absolute;
-            top: 150px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: black;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .hero-article-overlay p {
-            flex: 1;
-            margin: 0;
-        }
-
-        .hero-article-overlay img {
-            float: right;
-            width: 125px;
-            height: auto;
-            border-radius: 5px;
-            margin-left: 20px;
-        }
-
-        /* Social Media Section */
-        .socialmedia {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            gap: 15px;
-        }
-
-        .socialmedia a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            background-color: var(--secondary-color);
-            border-radius: 10px;
-            text-decoration: none;
-        }
-
-        .socialmedia img {
-            width: 40px;
-            height: auto;
-            margin: 0 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/logo.png" alt="Logotipo de Rafting">
+        <img id="logo" src="images/logo-de-rafting.jpg" alt="rafting logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -147,11 +24,11 @@
 
     <main>
         <div class="hero">
-            <img src="images/hero-image.jpg" alt="Personas haciendo rafting en un río">
-            <h1 class="hero-content">White Water Rafting Company</h1>
+            <img src="images/hero-image.jpg" alt="People rafting on a river">
+            <h1 class="hero-content">Lunahuana Expedition</h1>
             <article class="hero-article-overlay">
-                <img src="images/happy-client.jpg" alt="Cliente feliz o empleado sonriente">
-                <p>At White Water Rafting Company, we are passionate about providing thrilling and unforgettable rafting
+                <img src="images/happy-client.jpg" alt="Happy customer or smiling employee">
+                <p>At Lunahuana Expedition, we are passionate about providing thrilling and unforgettable rafting
                     experiences. Our team of experienced guides is dedicated to ensuring your safety and enjoyment on
                     the water.</p>
             </article>
@@ -184,13 +61,13 @@
         <p>© 2025 - White Water Rafting Company - Tasha Vidal</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Icono de Facebook">
+                <img src="images/facebook.png" alt="Facebook logo">
             </a>
             <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="Icono de LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn logo">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Icono de Instagram">
+                <img src="images/instagram.png" alt="Instagram logo">
             </a>
         </nav>
     </footer>
