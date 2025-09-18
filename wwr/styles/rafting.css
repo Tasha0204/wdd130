@@ -52,13 +52,16 @@ h1, h2 {
 
 .hero-content {
   position: absolute;
-  top: 30%; 
+  top: 5%; 
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  z-index: 2;
   text-align: center;
   color: white;
   width: 100%;
-  z-index: 2;
+  padding: 16px;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
 }
 
 .hero-content h1 {
@@ -71,17 +74,20 @@ h1, h2 {
 }
 
 .hero-article-overlay {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  z-index: 1; 
+    position: absolute;
+    bottom: 20px; 
+    left: 30%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
 }
 
 .hero-article-overlay p {
