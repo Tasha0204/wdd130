@@ -4,6 +4,10 @@
   --accent1-color: #e9c46a;
   --accent2-color: #e76f51;
 
+  --light-bg: rgba(255, 255, 255, 0.8);
+  --black: #000000;
+  --white: #ffffff;
+
   --heading-font: 'Times New Roman', 'Georgia', serif;
   --body-font: 'Arial', 'Helvetica', sans-serif;
 }
@@ -32,7 +36,7 @@ h1, h2 {
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
-  color: #000000;
+  color: var(--black);
 }
 
 
@@ -42,48 +46,39 @@ nav, p, section, article {
 
 }
 
+
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
-.hero h1{
+
+.hero h1 {
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-  z-index: 2;
+  color: var(--white);
+  z-index: 3; /* Encima del article */
   background-color: var(--accent1-color);
   padding: 10px 20px;
   border-radius: 8px;
   opacity: 0.9;
 }
-.hero-content {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 16px;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  z-index: 2;
-}
+
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
+  z-index: 2; /* Debajo del h1 */
+  background-color: var(--light-bg);
+  color: var(--black);
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
 }
+
 .hero article img {
   float: right;
   width: 125px;
@@ -106,13 +101,13 @@ nav, p, section, article {
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: var(--secondary-color); 
+  background-color: var(--secondary-color);
   border-radius: 10px;
   text-decoration: none;
 }
 
 .socialmedia img {
-  width: 40px; 
+  width: 40px;
   height: auto;
   margin: 0 10px;
 }
