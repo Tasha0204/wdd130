@@ -1,81 +1,198 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>About Us - White Water Rafting Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - White Water Rafting</title>
     <meta name="description"
-        content="Learn more about White Water Rafting Company, our mission, our guides, and the unforgettable rafting experiences we provide.">
+        content="Tasha Rosa Vidal Bravo, BYU-Idaho WDD 130 creación de sitio web para una empresa de rafting">
     <meta name="author" content="Tasha Rosa Vidal Bravo">
-    <link rel="stylesheet" href="styles/rafting.css">
 
+    <style>
+        :root {
+            --primary-color: #5d5a85;
+            --secondary-color: #f4a261;
+            --accent1-color: #e9c46a;
+            --accent2-color: #e76f51;
+
+            --heading-font: 'Times New Roman', 'Georgia', serif;
+            --body-font: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            color: #000000;
+        }
+
+        header,
+        main,
+        footer {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+        }
+
+        nav,
+        p,
+        section,
+        article {
+            margin: 16px;
+            padding: 8px;
+            color: #000000;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 16px;
+            opacity: 0.7;
+            background-color: var(--accent1-color);
+            z-index: 2;
+        }
+
+        .hero-article-overlay {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .hero-article-overlay p {
+            flex: 1;
+            margin: 0;
+        }
+
+        .hero-article-overlay img {
+            float: right;
+            width: 125px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        /* Social Media Section */
+        .socialmedia {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .socialmedia a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .socialmedia img {
+            width: 40px;
+            height: auto;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="logo de Rafting">
+        <img id="logo" src="images/logo.png" alt="Logotipo de Rafting">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
         <div class="hero">
-            <img src="images/hero-image.jpg" alt="People rafting on a river">
-            <h1>White Water Rafting Company</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy customer or smiling employee">
-                <p>
-                    Adventure awaits! Join us for unforgettable rafting trips guided by experienced professionals who
-                    love the river as much as you will.
-                </p>
+            <img src="images/hero-image.jpg" alt="Personas haciendo rafting en un río">
+            <h1 class="hero-content">White Water Rafting Company</h1>
+            <article class="hero-article-overlay">
+                <img src="images/happy-client.jpg" alt="Cliente feliz o empleado sonriente">
+                <p>At White Water Rafting Company, we are passionate about providing thrilling and unforgettable rafting
+                    experiences. Our team of experienced guides is dedicated to ensuring your safety and enjoyment on
+                    the water.</p>
             </article>
         </div>
 
         <section>
-            <h2>Our Mission</h2>
-            <p>
-                At White Water Rafting Company, we aim to provide safe, exciting, and memorable adventures for people of
-                all ages.
-            </p>
+            <h2>Lunahuana Expeditions</h2>
+            <p>Connecting families and friends through outdoor activities in Lunahuaná through guided adventures
+                conducted with integrity, professionalism, and enthusiasm. Be part of the moments where unforgettable
+                memories are created.</p>
         </section>
 
         <section>
-            <h2>Our History</h2>
-            <p>
-                Founded in 1998, our company has guided thousands of happy rafters down some of the most thrilling
-                rivers in the region.
-            </p>
+            <h2>History</h2>
+            <p>Our journey began years ago with a simple passion for the river. What started as a small group of friends
+                exploring local rapids has grown into a premier rafting outfitter. We believe in sharing the power and
+                beauty of the river with others, and this belief has led us to a successful business. Our company has
+                evolved from a family passion to a world-class whitewater experience, successfully guiding thousands of
+                people down some of the most exciting rivers in the country, creating lasting memories and forging a
+                community of fellow river enthusiasts. Our history is a testament to our dedication to the sport and the
+                people who love it.</p>
         </section>
 
         <section>
-            <h2>Meet Our Guides</h2>
-            <p>
-                Our guides are certified professionals who combine years of rafting experience with a passion for
-                sharing the beauty of the outdoors.
-            </p>
+            <h2>¡Adventure Awaits You!</h2>
         </section>
     </main>
 
     <footer>
-        <p>
-            © 2025 White Water Rafting Company | Tasha Rosa Vidal Bravo
-        </p>
-        <div class="socialmedia">
+        <p>© 2025 - White Water Rafting Company - Tasha Vidal</p>
+        <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Visítanos en Facebook">
+                <img src="images/facebook.png" alt="Icono de Facebook">
             </a>
             <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="Conéctate con nosotros en LinkedIn">
+                <img src="images/linkedin.png" alt="Icono de LinkedIn">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Síguenos en Instagram">
+                <img src="images/instagram.png" alt="Icono de Instagram">
             </a>
-        </div>
+        </nav>
     </footer>
 </body>
 
