@@ -1,13 +1,16 @@
 :root {
-  --primary-color: #5d5a85;
+  --primary-color:#055a05;
   --secondary-color: #f4a261;
-  --accent1-color: #e9c46a;
-  --accent2-color: #e76f51;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
 
-  --heading-font: 'Times New Roman', 'Georgia', serif;
+  --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: 'Arial', 'Helvetica', sans-serif;
 }
-
+header{
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,11 +19,11 @@
 
 body {
   font-family: var(--body-font);
-  color: #000000;
+  color:var(--accent1-color)
 }
 
 header, main, footer {
-  width: 960px;
+  width: 840px;
   margin: 0 auto;
 }
 
@@ -32,7 +35,10 @@ h1, h2 {
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
-  color: #000000;
+
+}
+.socialmedia a{
+  text-decoration: none;
 }
 
 /* Hero Section */
@@ -46,68 +52,18 @@ nav, p, section, article {
   height: auto;
 }
 
-.hero-content {
+h1{
   position: absolute;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  color: white;
   padding: 16px;
+  text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  z-index: 2;
+  color: #fff;
 }
 
-.hero-article-overlay {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.hero-article-overlay p {
-  flex: 1;
-  margin: 0;
-}
-
-.hero-article-overlay img {
+.hero article img{
   float: right;
   width: 125px;
-  height: auto;
-  border-radius: 5px;
-  margin-left: 20px;
-}
-/* Social Media Section */
-.socialmedia {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 15px;
-}
 
-.socialmedia a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  text-decoration: none;
-}
-.socialmedia img {
-  width: 40px; 
-  height: auto;
-  margin: 0 10px;
 }
