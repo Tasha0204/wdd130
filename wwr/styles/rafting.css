@@ -72,7 +72,7 @@ nav, p, section, article {
   border-radius: 10px;
   max-width: 600px;
   display: flex;
-  align-items: large;
+  align-items: stretch;
   gap: 50px;
 }
 
