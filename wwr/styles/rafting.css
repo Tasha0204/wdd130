@@ -27,7 +27,7 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 nav, p, section, article {
@@ -42,7 +42,7 @@ header {
   grid-template-columns: auto 1fr;
   align-items: center; 
   padding: 20px;
-  background-color: rgb(76, 2, 82); ;  
+  background-color: rgb(2, 96, 32); 
 }
 
 
@@ -63,7 +63,7 @@ header {
   color: #fafafa; 
   padding: 10px 15px; 
   border: 0.5px solid #ffffff; 
-  background-color: var(--accent1-color); 
+  background-color: var(--secondary-color); 
   z-index: 10;
   font-size: 1.1em;
   font-weight: bold; 
@@ -89,7 +89,7 @@ header {
     text-align: center;
     color: white;
     padding: 16px 40px;
-    background-color: var(--accent1-color); 
+    background-color: var(--secondary-color); 
     z-index: 2;
     font-size: 1.8em;
     white-space: nowrap; 
@@ -188,7 +188,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: rgb(76, 2, 82); ;
+  background-color: rgb(2, 96, 32); 
   color: white;
   margin-top: 50px;
   font-size: 1.1em;
