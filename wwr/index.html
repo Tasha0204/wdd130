@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>Home - White Water Rafting</title>
+    <title>Home - White Water Rafting</title>
     <meta name="description" content="Tasha Rosa Vidal Bravo, BYU-Idaho WDD 130 website creation for a rafting company">
     <meta name="author" content="Tasha Rosa Vidal Bravo">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <img id="logo" src="images/logo.png" alt="Rafting Logo">
         <nav class="main-nav">
             <a href="index.html">Home</a>
@@ -21,82 +21,55 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
 
+    <main>
         <div class="hero">
             <img src="images/hero-image.jpg" alt="People rafting on a river">
-            <div class="hero-content">
+            <div class="hero-text-overlay">
+                <h1>Have An Adventure</h1>
                 <p>Make memories with Dry-Oar</p>
-                <a href="#" class="btn-main">Book Now</a>
-                <article class="hero-article-overlay">
-                    <h1>Have An Adventure</h1>
-
+                <a href="contact.html" class="btn-main">Book Now</a>
             </div>
-            <section class="adventure-section">
-                <h2>¡Adventure Awaits You!</h2>
-                <div class="adventure-list">
-                    <figure>
-                        <img src="images/adventure-1.webp" alt="All terrain Vehile">
-                        <i class="fa-solid fa-truck-fast"></i>
-                        <h3>Rafting</h3>
-                    </figure>
-                    <figure>
-                        <img src="images/adventure-2.webp" alt="Zip line">
-                        <i class="fa-solid fa-mountain"></i>
-                        <h3>Zip Line</h3>
-                    </figure>
-                    <figure>
-                        <img src="images/adventure-3.webp" alt="Rafting">
-                        <i class="fa-solid fa-water icon-water"></i>
-                        <h3>Rafting</h3>
-                    </figure>
-                    <figure>
-                        <img src="images/adventure-4.webp" alt="Rappelling">
-                        <i class="fa-solid fa-mountain"></i>
-                        <h3>Rappelling</h3>
-                    </figure>
-                    <figure>
-                        <img src="images/adventure-5.webp" alt="Horseback Riding">
-                        <i class="fa-solid fa-horse"></i>
-                        <h3>Horseback Riding</h3>
-                    </figure>
+
+        </div>
+
+        <section class="card-grid-container">
+            <figure class="adventure-card">
+                <img src="images/adventure-1.webp" alt="Rivers">
+                <figcaption>Rivers</figcaption>
+            </figure>
+            <figure class="adventure-card">
+                <img src="images/adventure-2.webp" alt="Camping">
+                <figcaption>Camping</figcaption>
+            </figure>
+            <figure class="adventure-card">
+                <img src="images/adventure-3.webp" alt="Rapids">
+                <figcaption>Rapids</figcaption>
+            </figure>
+        </section>
+
+        <section class="thrill-section">
+            <div class="thrill-content">
+                <img src="images/thrill-image.jpg" alt="Montaña y río">
+                <div class="thrill-text">
+                    <h2>More Than Just The Thrill</h2>
+                    <p>Enjoy the breathtaking scenery, more waters, meadows, canyons, and high peaks. There is more than
+                        just the thrill. This is a great way to get away from it all and relax amongst all the beauty of
+                        the great outdoors.</p>
+                    <a href="contact.html" class="btn-secondary">Join Us</a>
                 </div>
-            </section>
-            <section class="testimonials-section">
-                <h2>What our clients say</h2>
-                <div class="adventure-list">
-                    <figure>
-                        <img src="images/employee-1.webp" alt="Profile of employee Jane Doe">
-                        <figcaption>Justin Atherton <br>"⭐⭐Incredible experience at a super price⭐⭐"</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee-2.webp" alt="Profile of employee John Smith">
-                        <figcaption>Lucy Avila<br>"⭐⭐I never stopped having fun⭐⭐"</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/employee-3.webp" alt="Profile of employee Ana Garcia">
-                        <figcaption>Sofía Feeney<br>"⭐⭐Recommended full adrenaline⭐⭐"</figcaption>
-                    </figure>
-                </div>
-            </section>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2025 -🪸 White Water Rafting Company 🪸 - Tasha Vidal</p>
-        <div class="footer-links">
-            <a href="#siteplan">Site Plan</a>
-            <a href="#contact">Contact Us</a>
-        </div>
+        <p>© 2025 - White Water Rafting Company - Tasha Vidal</p>
+        <a href="siteplan.html" class="site-plan-link">Site Plan</a>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
         </nav>
     </footer>
 </body>
