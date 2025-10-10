@@ -22,8 +22,7 @@ body {
 
 
 header, main, footer {
-     width: 100%; 
-    width: 960px; 
+    width: 1200px; 
     margin: 0 auto;
 }
 
